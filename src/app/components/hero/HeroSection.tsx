@@ -11,7 +11,7 @@ export default function HeroSection() {
         >
             <div className="relative z-10 w-full min-h-[550px] max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
                 <motion.img
-                    src="/images/anhcv.jpg"
+                    src="/images/me.jpg"
                     alt="Nguyen Huy Hoang"
                     className="w-[300px] h-[300px] object-cover rounded-[10rem] shadow-xl"
                     initial={{ opacity: 0, x: -100 }}
@@ -38,7 +38,7 @@ export default function HeroSection() {
                     <p className="text-xl text-[#94a3b8] mb-6">
                         <Typewriter
                             words={[
-                                "Creative Web Developer building modern, high-performance websites using React, Next.js & more.",
+                                "Turning imagination into interactive web experiences that inspire and connect.",
                             ]}
                             loop={1}
                             cursor
