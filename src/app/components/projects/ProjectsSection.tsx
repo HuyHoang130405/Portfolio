@@ -2,54 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const projects = [
-  {
-    img: "/images/img-hotel.jpg",
-    title: "Hotel Management Website",
-    description:
-      "Full-stack hotel management platform built with Next.js, Angular, Node.js, and Python — providing booking, admin management, and analytics features.",
-    tech: ["Next.js", "Node.js", "Angular", "Python"],
-    github: "https://github.com/HuyHoang130405/Hotel-Management-Website",
-    demo: "https://hotel-booking-hoang.vercel.app",
-  },
-  {
-    img: "/images/img-portfolio1.jpg",
-    title: "Portfolio Website",
-    description:
-      "Personal portfolio website built with Next.js and Tailwind CSS.",
-    tech: ["Next.js", "Tailwind", "Framer Motion"],
-    github: "https://github.com/HuyHoang130405/Portfolio",
-    demo: "https://nguyenhuyhoang.dev",
-  },
-  {
-    img: "/images/img-todolist.jpg",
-    title: "To Do List",
-    description:
-      "Full-stack ToDo List app built with Next.js and Node.js.",
-    tech: ["Next.js", "Node.js", "Tailwind"],
-    github: "https://github.com/HuyHoang130405/To-Do-List",
-    demo: "#",
-  },
-  {
-    img: "/images/img-ecommerce.jpg",
-    title: "E-commerce-T8-2025",
-    description:
-      "Backend API for an eCommerce platform built with NestJS, MySQL, and Docker.",
-    tech: ["NestJS", "MySQL", "Docker"],
-    github: "https://github.com/HuyHoang130405/Ecommerce-T8-2025",
-    demo: "#",
-  },
-  {
-    img: "/images/img-jewelry.jpg",
-    title: "Jewelry Website",
-    description:
-      "Jewelry Website built with PHP",
-    tech: ["PHP"],
-    github: "https://github.com/HuyHoang130405/Jewelry-Website",
-    demo: "#",
-  },
-];
+import { projects } from "../../data/projects"
 
 const BUTTON_STYLE =
   "absolute top-1/2 -translate-y-1/2 z-30 p-3 bg-cyan-900/80 border border-cyan-400/50 rounded-full shadow-lg hover:bg-cyan-700/90 transition flex items-center justify-center backdrop-blur-sm";
@@ -75,9 +28,22 @@ export default function ProjectsSection() {
       id="projects"
       className="relative max-w-7xl mx-auto px-6 py-20 overflow-hidden"
     >
-      <h2 className="text-center text-2xl md:text-3xl font-bold mb-12 text-cyan-400">
-        Featured Projects
-      </h2>
+      {/* Tiêu đề mới */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="text-center mb-12"
+      >
+        <h2 className="text-3xl md:text-4xl font-extrabold text-cyan-400 tracking-wide drop-shadow-lg">
+          What I’ve Been Building
+        </h2>
+        <p className="mt-3 text-white text-base md:text-lg max-w-2xl mx-auto">
+          A glimpse into my favorite creations — thoughtful, modern, and
+          interactive projects that blend design and technology ✨
+        </p>
+      </motion.div>
 
       <div className="relative flex items-center justify-center">
         {projects.length > visibleCount && scrollIndex > 0 && (
