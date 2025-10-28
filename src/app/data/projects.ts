@@ -6,7 +6,7 @@ export const projects = [
       "Full-stack hotel management platform built with Next.js, Angular, Node.js, and Python — providing booking, admin management, and analytics features.",
     tech: ["Next.js", "Node.js", "Angular", "Python"],
     github: "https://github.com/HuyHoang130405/Hotel-Management-Website",
-    demo: "https://hotel-booking-hoang.vercel.app",
+    demo: "#",
   },
   {
     img: "/images/img-portfolio1.jpg",
@@ -15,7 +15,7 @@ export const projects = [
       "Personal portfolio website built with Next.js and Tailwind CSS.",
     tech: ["Next.js", "Tailwind", "Framer Motion"],
     github: "https://github.com/HuyHoang130405/Portfolio",
-    demo: "https://nguyenhuyhoang.dev",
+    demo: "#",
   },
   {
     img: "/images/img-todolist.jpg",

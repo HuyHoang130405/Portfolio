@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import FadeInWhenVisible from "../common/FadeInWhenVisible";
 import CountUp from "react-countup";
-import AstronautFly from "../common/AstronautFly";
 
 export default function AboutSection() {
   return (
@@ -11,7 +10,6 @@ export default function AboutSection() {
       id="about"
       className="min-h-screen w-full px-6 md:px-12 py-32 text-white overflow-x-hidden"
     >
-      {/* <AstronautFly/> */}
       <FadeInWhenVisible>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start max-w-7xl mx-auto">
           {/* Cột chữ bên trái */}
@@ -38,12 +36,8 @@ export default function AboutSection() {
             </p>
 
             <p className="text-gray-400 leading-relaxed max-w-lg">
-              My main tools are{" "}
-              <span className="text-white font-medium">
-                React, Next.js, Tailwind CSS
-              </span>
-              . I’m always exploring the best ways to optimize UX, animation,
-              and performance.
+              I focus on crafting smooth, intuitive, and visually engaging web
+              experiences that feel alive and perform beautifully across all devices.
             </p>
 
             <div className="flex flex-wrap gap-6 text-gray-400 text-base mt-4">
@@ -55,7 +49,7 @@ export default function AboutSection() {
               </div>
               <div className="flex flex-col items-center">
                 <span className="block text-3xl font-bold text-white">
-                  <CountUp end={15} duration={2} suffix="+" enableScrollSpy />
+                  <CountUp end={6} duration={2} suffix="+" enableScrollSpy />
                 </span>
                 <span className="text-sm">Projects Completed</span>
               </div>
@@ -94,7 +88,7 @@ export default function AboutSection() {
               <div>
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Education</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  FPT Polytechnic College<br />Software Development — 2023 to Now
+                  FPT Polytechnic College<br />Web Programming — 2023 to Now
                 </p>
               </div>
               <div>
@@ -119,7 +113,7 @@ export default function AboutSection() {
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Interests</h3>
                 <p className="text-gray-400 leading-relaxed">Design trends, creative animation, 3D web.</p>
                 <h3 className="text-cyan-400 font-semibold mt-3 mb-1 text-lg">Languages</h3>
-                <p className="text-gray-400 leading-relaxed">Vietnamese 🇻🇳 | English 🇬🇧</p>
+                <p className="text-gray-400 leading-relaxed">Vietnamese (Native) <br />English (Basic)</p>
               </div>
             </div>
           </motion.div>
