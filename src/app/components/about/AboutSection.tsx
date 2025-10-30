@@ -20,12 +20,12 @@ export default function AboutSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="col-span-12 md:col-span-6 flex flex-col justify-center gap-6 order-1"
           >
-            <div className="md:text-center lg:text-left">
-              <h2 className="md:mb-5 md:text-4xl lg:text-5xl font-bold text-[#38bdf8]">
+            <div className="sm:text-center lg:text-left">
+              <h2 className="sm:mb-5 sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#38bdf8]">
                 About Me
               </h2>
 
-              <p className="text-lg text-gray-300 leading-relaxed lg:max-w-lg">
+              <p className="md:text-lg text-gray-300 leading-relaxed lg:max-w-lg">
                 Hi, I’m{" "}
                 <span className="font-semibold text-white">
                   Nguyen Huy Hoang
@@ -39,14 +39,14 @@ export default function AboutSection() {
                 digital ideas to life.
               </p>
 
-              <p className="text-lg text-gray-300 leading-relaxed lg:max-w-lg">
+              <p className="md:text-lg text-gray-300 leading-relaxed lg:max-w-lg">
                 I focus on crafting smooth, intuitive, and visually engaging web
                 experiences that feel alive and perform beautifully across all devices.
               </p>
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap gap-6 text-gray-400 text-base mt-4 md:justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-6 text-gray-400 text-base mt-4 sm:justify-center lg:justify-start">
               <div className="flex flex-col items-center">
                 <span className="block text-3xl font-bold text-white">
                   <CountUp end={2} duration={2} suffix="+" enableScrollSpy />
@@ -119,7 +119,7 @@ export default function AboutSection() {
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Interests</h3>
                 <p className="text-gray-400 leading-relaxed">Design trends, creative animation, 3D web.</p>
                 <h3 className="text-cyan-400 font-semibold mt-3 mb-1 text-lg">Languages</h3>
-                <p className="text-gray-400 leading-relaxed">Vietnamese (Native) <br />English (Basic)</p>
+                <p className="text-gray-400 leading-relaxed">Vietnamese (Native) <br />English (Fluent)</p>
               </div>
             </div>
           </motion.div>

@@ -32,10 +32,10 @@ export default function HeroSection() {
                     <h1 className="text-1xl font-extrabold leading-tight tracking-wide mb-2">
                         Hi, There!
                     </h1>
-                    <h1 className="text-4xl font-extrabold leading-tight tracking-wide mb-4">
+                    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight tracking-wide mb-4">
                         I'm <span className="text-[#38bdf8]">Nguyen Huy Hoang</span>
                     </h1>
-                    <p className="text-xl text-[#94a3b8] mb-6">
+                    <p className="sm:text-lg md:text-xl text-[#94a3b8] mb-6">
                         <Typewriter
                             words={[
                                 "Turning imagination into interactive web experiences that inspire and connect.",
@@ -48,7 +48,7 @@ export default function HeroSection() {
                             delaySpeed={1000}
                         />
                     </p>
-                    <p className="text-xl text-[#94a3b8] mb-6">
+                    <p className="sm:text-lg md:text-xl text-[#94a3b8] mb-6">
                         Wellcome to My personal website 👋
                     </p>
                     <a

@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { projects } from "../../data/projects"
+import { projects } from "../../data/projects";
 
 const BUTTON_STYLE =
   "absolute top-1/2 -translate-y-1/2 z-30 p-3 bg-cyan-900/80 border border-cyan-400/50 rounded-full shadow-lg hover:bg-cyan-700/90 transition flex items-center justify-center backdrop-blur-sm";
@@ -11,6 +11,15 @@ const ICON_STYLE = "w-6 h-6 text-cyan-300 drop-shadow-lg";
 export default function ProjectsSection() {
   const [active, setActive] = useState(0);
   const [scrollIndex, setScrollIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // 🧠 Theo dõi kích thước màn hình
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 640);
+    handleResize(); // Gọi 1 lần khi load
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const visibleCount = 5;
   const maxScrollIndex = Math.max(projects.length - visibleCount, 0);
@@ -28,7 +37,7 @@ export default function ProjectsSection() {
       id="projects"
       className="relative max-w-7xl mx-auto px-6 py-20 overflow-hidden"
     >
-      {/* Tiêu đề mới */}
+      {/* Tiêu đề */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,6 +55,7 @@ export default function ProjectsSection() {
       </motion.div>
 
       <div className="relative flex items-center justify-center">
+        {/* Nút trái */}
         {projects.length > visibleCount && scrollIndex > 0 && (
           <button
             onClick={handlePrev}
@@ -56,7 +66,8 @@ export default function ProjectsSection() {
           </button>
         )}
 
-        <div className="flex gap-3 md:gap-4 justify-center items-center w-full overflow-hidden">
+        {/* Vùng hiển thị project */}
+        <div className="md:flex gap-3 sm:grid sm:grid-cols-2 md:gap-4 justify-center items-center w-full overflow-hidden">
           {visibleProjects.map((proj, idx) => {
             const globalIdx = scrollIndex + idx;
             const isActive = globalIdx === active;
@@ -73,11 +84,11 @@ export default function ProjectsSection() {
                     duration: 0.4,
                     ease: [0.25, 0.1, 0.25, 1],
                   }}
-                  className={`relative rounded-2xl overflow-hidden cursor-pointer border border-cyan-400/20 shadow-lg backdrop-blur-md aspect-[9/16] h-[380px] transition-all duration-500 ${
-                    isActive
-                      ? "w-[22%] md:w-[23%] z-20"
-                      : "w-[14%] md:w-[14%] opacity-80 hover:scale-105"
-                  }`}
+                  className={`relative rounded-2xl overflow-hidden cursor-pointer border border-cyan-400/20 shadow-lg backdrop-blur-md aspect-[9/16] h-[380px] transition-all duration-500
+                    ${isActive
+                      ? "sm:w-full md:w-[22%] z-20"
+                      : "sm:w-full md:w-[14%] opacity-80 hover:scale-105"
+                    }`}
                 >
                   <motion.img
                     src={proj.img}
@@ -87,17 +98,19 @@ export default function ProjectsSection() {
                     transition={{ duration: 0.3 }}
                   />
 
+                  {/* Thông tin project */}
                   <motion.div
                     initial={false}
                     animate={{
-                      opacity: isActive ? 1 : 0,
-                      y: isActive ? 0 : 20,
+                      opacity: isActive || isMobile ? 1 : 0,
+                      y: isActive || isMobile ? 0 : 20,
                     }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
                     className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent text-white p-4 flex flex-col justify-end"
                   >
                     <h3 className="text-lg font-semibold">{proj.title}</h3>
-                    {isActive && (
+
+                    {(isActive || isMobile) && (
                       <>
                         <p className="text-sm text-gray-300 mt-2 mb-3 line-clamp-3">
                           {proj.description}
@@ -137,6 +150,7 @@ export default function ProjectsSection() {
           })}
         </div>
 
+        {/* Nút phải */}
         {projects.length > visibleCount && scrollIndex < maxScrollIndex && (
           <button
             onClick={handleNext}

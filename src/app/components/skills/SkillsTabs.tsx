@@ -61,7 +61,7 @@ export default function SkillsTabs() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-3 tracking-wide drop-shadow-lg">
+            <h2 className="sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-3 tracking-wide drop-shadow-lg">
               My Tech Stack
             </h2>
             <p className="text-gray-400 text-base md:text-lg">
@@ -96,20 +96,20 @@ export default function SkillsTabs() {
               transition={{ duration: 0.5 }}
               className="mb-6"
             >
-              <p className="text-cyan-300 text-lg mb-6">{skillGroups[activeTab].desc}</p>
+              <p className="text-cyan-300 md:text-lg mb-6">{skillGroups[activeTab].desc}</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 place-items-center">
                 {skillGroups[activeTab].skills.map((skill, idx) => (
                   <motion.div
                     key={skill.name}
                     whileHover={{ scale: 1.13, rotate: 2 }}
                     transition={{ type: "spring", stiffness: 300 }}
-                    className="flex flex-col items-center justify-center w-28 h-28 md:w-32 md:h-32 
+                    className="flex flex-col items-center justify-center sm:w-26 sm:h-26 md:w-28 md:h-28 lg:w-32 lg:h-32 
                       rounded-3xl bg-gradient-to-br from-[#0f172a]/80 to-[#38bdf8]/10 border border-cyan-500/30 backdrop-blur-md 
                       hover:border-cyan-400/80 shadow-xl hover:shadow-[0_0_30px_#38bdf8bb] 
                       transition-all duration-300"
                   >
                     <div className="text-5xl mb-2 drop-shadow-lg">{skill.icon}</div>
-                    <span className="text-base font-semibold text-gray-100">{skill.name}</span>
+                    <span className="sm:text-sm md:text-base font-semibold text-gray-100">{skill.name}</span>
                   </motion.div>
                 ))}
               </div>
