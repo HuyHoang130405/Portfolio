@@ -11,36 +11,42 @@ export default function AboutSection() {
       className="min-h-screen w-full px-6 md:px-12 py-32 text-white overflow-x-hidden"
     >
       <FadeInWhenVisible>
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start max-w-7xl mx-auto">
-          {/* Cột chữ bên trái */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start max-w-7xl mx-auto">
+
+          {/* Cột chữ + nút (cột trái) */}
           <motion.div
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="col-span-12 md:col-span-6 flex flex-col justify-center gap-6"
+            className="col-span-12 md:col-span-6 flex flex-col justify-center gap-6 order-1"
           >
-            <h2 className="text-5xl font-bold text-[#38bdf8]">About Me</h2>
+            <div className="md:text-center lg:text-left">
+              <h2 className="md:mb-5 md:text-4xl lg:text-5xl font-bold text-[#38bdf8]">
+                About Me
+              </h2>
 
-            <p className="text-lg text-gray-300 leading-relaxed max-w-lg">
-              Hi, I’m{" "}
-              <span className="font-semibold text-white">
-                Nguyen Huy Hoang
-              </span>
-              — a{" "}
-              <span className="font-semibold text-white">
-                Frontend Developer
-              </span>{" "}
-              passionate about building modern, responsive, and aesthetic user
-              interfaces. I love combining creativity and clean code to bring
-              digital ideas to life.
-            </p>
+              <p className="text-lg text-gray-300 leading-relaxed lg:max-w-lg">
+                Hi, I’m{" "}
+                <span className="font-semibold text-white">
+                  Nguyen Huy Hoang
+                </span>{" "}
+                — a{" "}
+                <span className="font-semibold text-white">
+                  Frontend Developer
+                </span>{" "}
+                passionate about building modern, responsive, and aesthetic user
+                interfaces. I love combining creativity and clean code to bring
+                digital ideas to life.
+              </p>
 
-            <p className="text-gray-400 leading-relaxed max-w-lg">
-              I focus on crafting smooth, intuitive, and visually engaging web
-              experiences that feel alive and perform beautifully across all devices.
-            </p>
+              <p className="text-lg text-gray-300 leading-relaxed lg:max-w-lg">
+                I focus on crafting smooth, intuitive, and visually engaging web
+                experiences that feel alive and perform beautifully across all devices.
+              </p>
+            </div>
 
-            <div className="flex flex-wrap gap-6 text-gray-400 text-base mt-4">
+            {/* Stats */}
+            <div className="flex flex-wrap gap-6 text-gray-400 text-base mt-4 md:justify-center lg:justify-start">
               <div className="flex flex-col items-center">
                 <span className="block text-3xl font-bold text-white">
                   <CountUp end={2} duration={2} suffix="+" enableScrollSpy />
@@ -60,7 +66,7 @@ export default function AboutSection() {
             </div>
 
             {/* Nút */}
-            <div className="flex gap-4 mt-8">
+            <div className="flex gap-4 mt-8 justify-center lg:justify-start">
               <a
                 href="/cv.pdf"
                 download
@@ -82,18 +88,18 @@ export default function AboutSection() {
             initial={{ opacity: 0, x: 80 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
-            className="col-span-12 md:col-span-6 flex flex-col justify-center"
+            className="col-span-12 md:col-span-6 flex flex-col justify-center order-3 md:order-3 lg:order-2"
           >
             <div className="grid grid-cols-2 gap-x-10 gap-y-10 text-gray-300 text-base">
               <div>
-                <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Education</h3>
+                <h3 className="text-cyan-400 font-semibold mb-2 text-lg ">Education</h3>
                 <p className="text-gray-400 leading-relaxed">
                   FPT Polytechnic College<br />Web Programming — 2023 to Now
                 </p>
               </div>
               <div>
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Soft Skills</h3>
-                <ul className="space-y-1 list-disc list-inside text-gray-400">
+                <ul className="space-y-1 list-disc list-inside text-gray-400 list-none">
                   <li>Teamwork 🤝</li>
                   <li>Communication 💬</li>
                   <li>Problem Solving 🧩</li>
@@ -117,6 +123,7 @@ export default function AboutSection() {
               </div>
             </div>
           </motion.div>
+
         </div>
       </FadeInWhenVisible>
     </section>

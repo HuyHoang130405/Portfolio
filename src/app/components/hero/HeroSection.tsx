@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
-import { ChevronDown } from "lucide-react";
+// import { ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
     return (
@@ -9,11 +9,11 @@ export default function HeroSection() {
             id="home"
             className="relative min-h-screen flex items-center justify-center shadow-lg"
         >
-            <div className="relative z-10 w-full min-h-[550px] max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+            <div className="relative z-10 w-full min-h-[550px] max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-10">
                 <motion.img
                     src="/images/me.jpg"
                     alt="Nguyen Huy Hoang"
-                    className="w-[300px] h-[300px] object-cover rounded-[10rem] shadow-xl"
+                    className="w-[300px] h-[300px] object-cover rounded-[10rem] shadow-xl mt-22 lg:mt-0"
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
@@ -60,7 +60,7 @@ export default function HeroSection() {
                 </motion.div>
             </div>
             <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2">
-                <ChevronDown className="w-8 h-8 text-[#38bdf8] animate-bounce" />
+                {/* <ChevronDown className="w-8 h-8 text-[#38bdf8] animate-bounce" /> */}
             </div>
         </section>
     )
