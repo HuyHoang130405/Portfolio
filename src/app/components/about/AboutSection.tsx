@@ -8,10 +8,10 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="min-h-screen w-full px-6 md:px-12 py-32 text-white overflow-x-hidden"
+      className="min-h-screen w-full mbl:px-4 sm:px-6 md:px-12 py-32 text-white overflow-x-hidden"
     >
       <FadeInWhenVisible>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 mbl:gap-6 sm:gap-10 items-start w-full max-w-7xl mx-auto">
 
           {/* Cột chữ + nút (cột trái) */}
           <motion.div
@@ -21,11 +21,11 @@ export default function AboutSection() {
             className="col-span-12 md:col-span-6 flex flex-col justify-center gap-6 order-1"
           >
             <div className="sm:text-center lg:text-left">
-              <h2 className="sm:mb-5 sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#38bdf8]">
+              <h2 className="w-full mbl:mb-5 mbl:text-3xl md:text-4xl lg:text-5xl font-bold text-[#38bdf8]">
                 About Me
               </h2>
 
-              <p className="md:text-lg text-gray-300 leading-relaxed lg:max-w-lg">
+              <p className="mbl:text-base md:text-lg text-gray-300 leading-relaxed lg:max-w-lg break-words whitespace-normal">
                 Hi, I’m{" "}
                 <span className="font-semibold text-white">
                   Nguyen Huy Hoang
@@ -39,7 +39,7 @@ export default function AboutSection() {
                 digital ideas to life.
               </p>
 
-              <p className="md:text-lg text-gray-300 leading-relaxed lg:max-w-lg">
+              <p className="mbl:text-base md:text-lg text-gray-300 leading-relaxed lg:max-w-lg">
                 I focus on crafting smooth, intuitive, and visually engaging web
                 experiences that feel alive and perform beautifully across all devices.
               </p>
@@ -48,19 +48,19 @@ export default function AboutSection() {
             {/* Stats */}
             <div className="flex flex-wrap gap-6 text-gray-400 text-base mt-4 sm:justify-center lg:justify-start">
               <div className="flex flex-col items-center">
-                <span className="block text-3xl font-bold text-white">
+                <span className="block mbl:text-xl sm:text-3xl font-bold text-white">
                   <CountUp end={2} duration={2} suffix="+" enableScrollSpy />
                 </span>
                 <span className="text-sm">Years of Experience</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="block text-3xl font-bold text-white">
+                <span className="block mbl:text-xl sm:text-3xl font-bold text-white">
                   <CountUp end={6} duration={2} suffix="+" enableScrollSpy />
                 </span>
                 <span className="text-sm">Projects Completed</span>
               </div>
               <div className="flex flex-col items-center">
-                <span className="block text-3xl font-bold text-white">FPT</span>
+                <span className="block mbl:text-xl sm:text-3xl font-bold text-white">FPT</span>
                 <span className="text-sm">Polytechnic College</span>
               </div>
             </div>

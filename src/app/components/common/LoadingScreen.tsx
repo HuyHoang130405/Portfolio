@@ -107,7 +107,7 @@ export default function LoadingScreen() {
             className="relative z-10 text-center"
           >
             <motion.h1
-              className="text-5xl md:text-7xl font-extrabold bg-clip-text text-transparent 
+              className="text-4xl md:text-7xl font-extrabold bg-clip-text text-transparent 
               bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500"
               animate={{
                 textShadow: [

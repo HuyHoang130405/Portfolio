@@ -13,7 +13,7 @@ export default function HeroSection() {
                 <motion.img
                     src="/images/me.jpg"
                     alt="Nguyen Huy Hoang"
-                    className="w-[300px] h-[300px] object-cover rounded-[10rem] shadow-xl mt-22 lg:mt-0"
+                    className="mbl:w-[250px] mbl:h-[250px] sm:w-[300px] sm:h-[300px] object-cover rounded-[10rem] shadow-xl mt-22 lg:mt-0"
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
