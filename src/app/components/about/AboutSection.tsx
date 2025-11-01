@@ -8,7 +8,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="min-h-screen w-full mbl:px-4 sm:px-6 md:px-12 py-32 text-white overflow-x-hidden"
+      className="min-h-screen w-full mbm:px-4 sm:px-6 md:px-12 py-32 text-white overflow-x-hidden"
     >
       <FadeInWhenVisible>
         <div className="grid grid-cols-1 lg:grid-cols-12 mbl:gap-6 sm:gap-10 items-start w-full max-w-7xl mx-auto">
@@ -20,8 +20,8 @@ export default function AboutSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="col-span-12 md:col-span-6 flex flex-col justify-center gap-6 order-1"
           >
-            <div className="mbl:text-center lg:text-left">
-              <h2 className="w-full mbl:mb-5 mbl:text-3xl md:text-4xl font-bold text-[#38bdf8]">
+            <div className="mbm:text-center lg:text-left">
+              <h2 className="w-full mbm:mb-5 mbm:text-[28px] mbl:text-3xl md:text-4xl font-bold text-[#38bdf8]">
                 About Me
               </h2>
 
@@ -67,17 +67,17 @@ export default function AboutSection() {
               </div>
             </div>
             {/* Nút */}
-            <div className="flex gap-4 mbl:mb-3 sm:mt-8 justify-center lg:justify-start">
+            <div className="flex gap-4 mbm:mb-8 mbl:mb-3 sm:mt-8 justify-center lg:justify-start">
               <a
-                href="/cv.pdf"
+                href="#"
                 download
-                className="mbl:text-sm sm:text-base px-5 py-2 border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition flex items-center gap-2"
+                className="mbm:text-sm sm:text-base px-5 py-2 border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition flex items-center gap-2"
               >
                 Download CV
               </a>
               <a
                 href="#contact"
-                className="mbl:text-sm sm:text-base px-5 py-2 border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition flex items-center gap-2"
+                className="mbm:text-sm sm:text-base px-5 py-2 border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition flex items-center gap-2"
               >
                 Contact Me
               </a>
@@ -98,7 +98,7 @@ export default function AboutSection() {
                   FPT Polytechnic College<br />Web Programming — 2023 to Now
                 </p>
               </div>
-              <div className="mbl:text-right sm:text-left">
+              <div className="mbm:text-right sm:text-left">
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Soft Skills</h3>
                 <ul className="space-y-1 list-disc list-inside text-gray-400 list-none">
                   <li>Teamwork</li>
@@ -109,14 +109,14 @@ export default function AboutSection() {
               </div>
               <div>
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Professional</h3>
-                <ul className="space-y-1 list-disc list-inside text-gray-400">
+                <ul className="space-y-1 list-disc list-inside text-gray-400 list-none">
                   <li>UI/UX Awareness</li>
                   <li>Responsive Design</li>
                   <li>Clean Code Practice</li>
                   <li>Performance Optimization</li>
                 </ul>
               </div>
-              <div className="mbl:text-right sm:text-left">
+              <div className="mbm:text-right sm:text-left">
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Interests</h3>
                 <p className="text-gray-400 leading-relaxed">Design trends, creative animation, 3D web.</p>
                 <h3 className="text-cyan-400 font-semibold mt-3 mb-1 text-lg">Languages</h3>

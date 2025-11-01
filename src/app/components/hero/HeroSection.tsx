@@ -13,7 +13,7 @@ export default function HeroSection() {
                 <motion.img
                     src="/images/me.jpg"
                     alt="Nguyen Huy Hoang"
-                    className="mbl:w-[250px] mbl:h-[250px] sm:w-[300px] sm:h-[300px] object-cover rounded-[10rem] shadow-xl mt-22 lg:mt-0"
+                    className="mbm:w-[250px] mbm:h-[250px] sm:w-[300px] sm:h-[300px] object-cover rounded-[10rem] shadow-xl mt-22 lg:mt-0"
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
@@ -32,7 +32,7 @@ export default function HeroSection() {
                     <h1 className="text-1xl font-extrabold leading-tight tracking-wide mb-2">
                         Hi, There!
                     </h1>
-                    <h1 className="text-3xl md:text-4xl font-extrabold leading-tight tracking-wide mb-4">
+                    <h1 className="mbm:text-[28px] mbl:text-3xl md:text-4xl font-extrabold leading-tight tracking-wide mb-4">
                         I'm <span className="text-[#38bdf8]">Nguyen Huy Hoang</span>
                     </h1>
                     <p className="sm:text-lg md:text-xl text-[#94a3b8] mb-6">
@@ -53,7 +53,7 @@ export default function HeroSection() {
                     </p>
                     <a
                         href="#projects"
-                        className="mbl:text-sm sm:text-base inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-6 py-3 rounded-full font-medium transition"
+                        className="mbm:text-sm sm:text-base inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-6 py-3 rounded-full font-medium transition"
                     >
                         View My Work
                     </a>

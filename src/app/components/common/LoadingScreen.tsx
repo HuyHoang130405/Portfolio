@@ -107,7 +107,7 @@ export default function LoadingScreen() {
             className="relative z-10 text-center"
           >
             <motion.h1
-              className="text-4xl md:text-7xl font-extrabold bg-clip-text text-transparent 
+              className="mbm:text-3xl mbl:text-4xl md:text-7xl font-extrabold bg-clip-text text-transparent 
               bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-500"
               animate={{
                 textShadow: [
@@ -122,7 +122,7 @@ export default function LoadingScreen() {
             </motion.h1>
 
             <motion.p
-              className="mt-4 text-cyan-300 text-base md:text-lg tracking-wider font-mono"
+              className="mt-4 text-cyan-300 mbm:text-sm mbl:text-base md:text-lg tracking-wider font-mono"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.8 }}
