@@ -9,11 +9,11 @@ export default function HeroSection() {
             id="home"
             className="relative min-h-screen flex items-center justify-center shadow-lg"
         >
-            <div className="relative z-10 w-full min-h-[550px] max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-10">
+            <div className="relative z-10 w-full min-h-[550px] max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center mbs:gap-5 mbm:gap-10">
                 <motion.img
                     src="/images/me.jpg"
                     alt="Nguyen Huy Hoang"
-                    className="mbm:w-[250px] mbm:h-[250px] sm:w-[300px] sm:h-[300px] object-cover rounded-[10rem] shadow-xl mt-22 lg:mt-0"
+                    className="mbs:w-[220px] mbs:h-[220px] mbl:w-[250px] mbl:h-[250px] sm:w-[300px] sm:h-[300px] object-cover rounded-[10rem] shadow-xl mt-22 lg:mt-0"
                     initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
@@ -32,10 +32,10 @@ export default function HeroSection() {
                     <h1 className="text-1xl font-extrabold leading-tight tracking-wide mb-2">
                         Hi, There!
                     </h1>
-                    <h1 className="mbm:text-[28px] mbl:text-3xl md:text-4xl font-extrabold leading-tight tracking-wide mb-4">
+                    <h1 className="mbs:text-[24px] mbm:text-[28px] mbl:text-3xl md:text-4xl font-extrabold leading-tight tracking-wide mb-4">
                         I'm <span className="text-[#38bdf8]">Nguyen Huy Hoang</span>
                     </h1>
-                    <p className="sm:text-lg md:text-xl text-[#94a3b8] mb-6">
+                    <p className="sm:text-lg md:text-xl text-[#94a3b8] mbs:mb-4 mbm:mb-6">
                         <Typewriter
                             words={[
                                 "Turning imagination into interactive web experiences that inspire and connect.",
@@ -48,12 +48,12 @@ export default function HeroSection() {
                             delaySpeed={1000}
                         />
                     </p>
-                    <p className="sm:text-lg md:text-xl text-[#94a3b8] mb-6">
+                    <p className="sm:text-lg md:text-xl text-[#94a3b8] mbs:mb-4 mbm:mb-6">
                         Wellcome to My personal website 👋
                     </p>
                     <a
                         href="#projects"
-                        className="mbm:text-sm sm:text-base inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-6 py-3 rounded-full font-medium transition"
+                        className="mbs:text-sm sm:text-base inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white mbs:px-5 mbs:py-2 mbm:px-6 mbm:py-3 rounded-full font-medium transition"
                     >
                         View My Work
                     </a>

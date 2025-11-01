@@ -14,7 +14,7 @@ export default function ContactSection() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mbm:text-[28px] mbl:text-3xl md:text-4xl font-bold mb-6 text-[#38bdf8]"
+          className="mbs:text-2xl mbm:text-[28px] mbl:text-3xl md:text-4xl font-bold mb-6 text-[#38bdf8]"
         >
           Let's Connect 👋
         </motion.h2>
@@ -71,7 +71,7 @@ export default function ContactSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-8 py-3 rounded-full mbm:text-sm sm:text-base md:text-lg font-medium transition shadow-lg"
+          className="inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-8 py-3 rounded-full mbs:text-sm sm:text-base md:text-lg font-medium transition shadow-lg"
         >
           Send Me a Message
         </motion.a>

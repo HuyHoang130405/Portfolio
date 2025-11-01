@@ -45,7 +45,7 @@ export default function ProjectsSection() {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-        <h2 className="mbm:text-2xl mbl:text-3xl md:text-4xl font-extrabold text-cyan-400 tracking-wide drop-shadow-lg">
+        <h2 className="mbs:text-[22px] mbl:text-3xl md:text-4xl font-extrabold text-cyan-400 tracking-wide drop-shadow-lg">
           What I’ve Been Building
         </h2>
         <p className="mt-3 text-white text-base md:text-lg max-w-2xl mx-auto">
@@ -86,8 +86,8 @@ export default function ProjectsSection() {
                   }}
                   className={`relative rounded-2xl overflow-hidden cursor-pointer border border-cyan-400/20 shadow-lg backdrop-blur-md aspect-[9/16] h-[380px] transition-all duration-500
                     ${isActive
-                      ? "mbm:w-full md:w-[22%] z-20"
-                      : "mbm:w-full md:w-[14%] opacity-80 hover:scale-105"
+                      ? "mbs:w-full md:w-[22%] z-20"
+                      : "mbs:w-full md:w-[14%] opacity-80 hover:scale-105"
                     }`}
                 >
                   <motion.img

@@ -59,9 +59,9 @@ export default function SkillsTabs() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-12"
+            className="mbs:mb-8 mbm:mb-12"
           >
-            <h2 className="mbm:text-[28px] mbl:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-3 tracking-wide drop-shadow-lg">
+            <h2 className="mbs:text-[24px] mbm:text-[28px] mbl:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-3 tracking-wide drop-shadow-lg">
               My Tech Stack
             </h2>
             <p className="text-gray-400 text-base md:text-lg">
@@ -70,12 +70,12 @@ export default function SkillsTabs() {
           </motion.div>
 
           {/* Tabs */}
-          <div className="flex justify-center mbm:gap-3 mbl:gap-6 mb-8">
+          <div className="flex justify-center mbs:gap-2 mbm:gap-3 mbl:gap-6 mb-8">
             {skillGroups.map((group, idx) => (
               <button
                 key={group.label}
                 onClick={() => setActiveTab(idx)}
-                className={`mbm:text-sm sm:text-base px-6 py-2 rounded-full font-semibold transition-all duration-300
+                className={`mbs:text-sm sm:text-base mbs:px-4 mbs:py-2 mbm:px-6 mbm:py-2 rounded-full font-semibold transition-all duration-300
                   ${activeTab === idx
                     ? "bg-gradient-to-r from-cyan-400 to-blue-600 text-white shadow-lg scale-105"
                     : "bg-[#0f172a]/60 text-gray-300 hover:bg-cyan-700/30 hover:text-white"
@@ -103,13 +103,13 @@ export default function SkillsTabs() {
                     key={skill.name}
                     whileHover={{ scale: 1.13, rotate: 2 }}
                     transition={{ type: "spring", stiffness: 300 }}
-                    className="flex flex-col items-center justify-center mbm:w-24 mbm:h-24 sm:w-26 sm:h-26 md:w-28 md:h-28 lg:w-32 lg:h-32 
+                    className="flex flex-col items-center justify-center mbs:w-24 mbs:h-24 sm:w-26 sm:h-26 md:w-28 md:h-28 lg:w-32 lg:h-32 
                       rounded-3xl bg-gradient-to-br from-[#0f172a]/80 to-[#38bdf8]/10 border border-cyan-500/30 backdrop-blur-md 
                       hover:border-cyan-400/80 shadow-xl hover:shadow-[0_0_30px_#38bdf8bb] 
                       transition-all duration-300"
                   >
-                    <div className="mbm:text-3xl sm:text-5xl mb-2 drop-shadow-lg">{skill.icon}</div>
-                    <span className="mbm:text-sm md:text-base font-semibold text-gray-100">{skill.name}</span>
+                    <div className="mbs:text-3xl sm:text-5xl mb-2 drop-shadow-lg">{skill.icon}</div>
+                    <span className="mbs:text-sm md:text-base font-semibold text-gray-100">{skill.name}</span>
                   </motion.div>
                 ))}
               </div>
