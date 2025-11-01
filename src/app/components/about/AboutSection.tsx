@@ -20,8 +20,8 @@ export default function AboutSection() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="col-span-12 md:col-span-6 flex flex-col justify-center gap-6 order-1"
           >
-            <div className="sm:text-center lg:text-left">
-              <h2 className="w-full mbl:mb-5 mbl:text-3xl md:text-4xl lg:text-5xl font-bold text-[#38bdf8]">
+            <div className="mbl:text-center lg:text-left">
+              <h2 className="w-full mbl:mb-5 mbl:text-3xl md:text-4xl font-bold text-[#38bdf8]">
                 About Me
               </h2>
 
@@ -46,37 +46,38 @@ export default function AboutSection() {
             </div>
 
             {/* Stats */}
-            <div className="flex flex-wrap gap-6 text-gray-400 text-base mt-4 sm:justify-center lg:justify-start">
+            <div className="grid grid-cols-2 gap-6 text-gray-400 text-base mt-4 sm:flex sm:flex-wrap sm:justify-center lg:justify-start">
               <div className="flex flex-col items-center">
-                <span className="block mbl:text-xl sm:text-3xl font-bold text-white">
+                <span className="block text-xl sm:text-3xl font-bold text-white">
                   <CountUp end={2} duration={2} suffix="+" enableScrollSpy />
                 </span>
                 <span className="text-sm">Years of Experience</span>
               </div>
+
               <div className="flex flex-col items-center">
-                <span className="block mbl:text-xl sm:text-3xl font-bold text-white">
+                <span className="block text-xl sm:text-3xl font-bold text-white">
                   <CountUp end={6} duration={2} suffix="+" enableScrollSpy />
                 </span>
                 <span className="text-sm">Projects Completed</span>
               </div>
-              <div className="flex flex-col items-center">
-                <span className="block mbl:text-xl sm:text-3xl font-bold text-white">FPT</span>
+
+              <div className="col-span-2 flex flex-col items-center">
+                <span className="block text-xl sm:text-3xl font-bold text-white">FPT</span>
                 <span className="text-sm">Polytechnic College</span>
               </div>
             </div>
-
             {/* Nút */}
-            <div className="flex gap-4 mt-8 justify-center lg:justify-start">
+            <div className="flex gap-4 mbl:mb-3 sm:mt-8 justify-center lg:justify-start">
               <a
                 href="/cv.pdf"
                 download
-                className="px-5 py-2 border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition flex items-center gap-2"
+                className="mbl:text-sm sm:text-base px-5 py-2 border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition flex items-center gap-2"
               >
                 Download CV
               </a>
               <a
                 href="#contact"
-                className="px-5 py-2 border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition flex items-center gap-2"
+                className="mbl:text-sm sm:text-base px-5 py-2 border border-cyan-400/40 text-cyan-300 rounded-lg hover:bg-cyan-500/10 transition flex items-center gap-2"
               >
                 Contact Me
               </a>
@@ -97,25 +98,25 @@ export default function AboutSection() {
                   FPT Polytechnic College<br />Web Programming — 2023 to Now
                 </p>
               </div>
-              <div>
+              <div className="mbl:text-right sm:text-left">
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Soft Skills</h3>
                 <ul className="space-y-1 list-disc list-inside text-gray-400 list-none">
-                  <li>Teamwork 🤝</li>
-                  <li>Communication 💬</li>
-                  <li>Problem Solving 🧩</li>
-                  <li>Adaptability ⚡</li>
+                  <li>Teamwork</li>
+                  <li>Communication</li>
+                  <li>Problem Solving</li>
+                  <li>Adaptability</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Professional</h3>
                 <ul className="space-y-1 list-disc list-inside text-gray-400">
-                  <li>UI/UX Awareness 🎨</li>
-                  <li>Responsive Design 📱</li>
-                  <li>Clean Code Practice 🧹</li>
-                  <li>Performance Optimization ⚡</li>
+                  <li>UI/UX Awareness</li>
+                  <li>Responsive Design</li>
+                  <li>Clean Code Practice</li>
+                  <li>Performance Optimization</li>
                 </ul>
               </div>
-              <div>
+              <div className="mbl:text-right sm:text-left">
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg">Interests</h3>
                 <p className="text-gray-400 leading-relaxed">Design trends, creative animation, 3D web.</p>
                 <h3 className="text-cyan-400 font-semibold mt-3 mb-1 text-lg">Languages</h3>

@@ -53,7 +53,7 @@ export default function HeroSection() {
                     </p>
                     <a
                         href="#projects"
-                        className="inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-6 py-3 rounded-full font-medium transition"
+                        className="mbl:text-sm sm:text-base inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-6 py-3 rounded-full font-medium transition"
                     >
                         View My Work
                     </a>

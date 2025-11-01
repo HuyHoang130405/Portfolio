@@ -67,7 +67,7 @@ export default function ProjectsSection() {
         )}
 
         {/* Vùng hiển thị project */}
-        <div className="md:flex gap-3 sm:grid sm:grid-cols-2 md:gap-4 justify-center items-center w-full overflow-hidden">
+        <div className="flex flex-col sm:grid sm:grid-cols-2 md:flex md:flex-row gap-3 md:gap-4 justify-center items-center w-full overflow-hidden">
           {visibleProjects.map((proj, idx) => {
             const globalIdx = scrollIndex + idx;
             const isActive = globalIdx === active;
@@ -86,8 +86,8 @@ export default function ProjectsSection() {
                   }}
                   className={`relative rounded-2xl overflow-hidden cursor-pointer border border-cyan-400/20 shadow-lg backdrop-blur-md aspect-[9/16] h-[380px] transition-all duration-500
                     ${isActive
-                      ? "sm:w-full md:w-[22%] z-20"
-                      : "sm:w-full md:w-[14%] opacity-80 hover:scale-105"
+                      ? "mbl:w-full md:w-[22%] z-20"
+                      : "mbl:w-full md:w-[14%] opacity-80 hover:scale-105"
                     }`}
                 >
                   <motion.img

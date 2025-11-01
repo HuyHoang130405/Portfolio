@@ -71,7 +71,7 @@ export default function ContactSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-8 py-3 rounded-full md:text-lg font-medium transition shadow-lg"
+          className="inline-block bg-[#38bdf8] hover:bg-[#0ea5e9] text-white px-8 py-3 rounded-full mbl:text-sm sm:text-base md:text-lg font-medium transition shadow-lg"
         >
           Send Me a Message
         </motion.a>

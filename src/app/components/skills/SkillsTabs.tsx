@@ -61,7 +61,7 @@ export default function SkillsTabs() {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <h2 className="sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-3 tracking-wide drop-shadow-lg">
+            <h2 className="mbl:text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 mb-3 tracking-wide drop-shadow-lg">
               My Tech Stack
             </h2>
             <p className="text-gray-400 text-base md:text-lg">
@@ -75,7 +75,7 @@ export default function SkillsTabs() {
               <button
                 key={group.label}
                 onClick={() => setActiveTab(idx)}
-                className={`px-6 py-2 rounded-full font-semibold transition-all duration-300
+                className={`mbl:text-sm sm:text-base px-6 py-2 rounded-full font-semibold transition-all duration-300
                   ${activeTab === idx
                     ? "bg-gradient-to-r from-cyan-400 to-blue-600 text-white shadow-lg scale-105"
                     : "bg-[#0f172a]/60 text-gray-300 hover:bg-cyan-700/30 hover:text-white"
@@ -103,13 +103,13 @@ export default function SkillsTabs() {
                     key={skill.name}
                     whileHover={{ scale: 1.13, rotate: 2 }}
                     transition={{ type: "spring", stiffness: 300 }}
-                    className="flex flex-col items-center justify-center sm:w-26 sm:h-26 md:w-28 md:h-28 lg:w-32 lg:h-32 
+                    className="flex flex-col items-center justify-center mbl:w-24 mbl:h-24 sm:w-26 sm:h-26 md:w-28 md:h-28 lg:w-32 lg:h-32 
                       rounded-3xl bg-gradient-to-br from-[#0f172a]/80 to-[#38bdf8]/10 border border-cyan-500/30 backdrop-blur-md 
                       hover:border-cyan-400/80 shadow-xl hover:shadow-[0_0_30px_#38bdf8bb] 
                       transition-all duration-300"
                   >
-                    <div className="text-5xl mb-2 drop-shadow-lg">{skill.icon}</div>
-                    <span className="sm:text-sm md:text-base font-semibold text-gray-100">{skill.name}</span>
+                    <div className="mbl:text-3xl sm:text-5xl mb-2 drop-shadow-lg">{skill.icon}</div>
+                    <span className="mbl:text-sm md:text-base font-semibold text-gray-100">{skill.name}</span>
                   </motion.div>
                 ))}
               </div>
