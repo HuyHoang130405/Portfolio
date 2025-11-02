@@ -40,7 +40,7 @@ export default function HeroSection() {
                             words={[
                                 "Turning imagination into interactive web experiences that inspire and connect.",
                             ]}
-                            loop={1}
+                            loop={2}
                             cursor
                             cursorStyle="|"
                             typeSpeed={40}
