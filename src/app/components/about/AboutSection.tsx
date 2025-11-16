@@ -56,7 +56,7 @@ export default function AboutSection() {
 
               <div className="flex flex-col items-center">
                 <span className="block text-xl sm:text-3xl font-bold text-white">
-                  <CountUp end={6} duration={2} suffix="+" enableScrollSpy />
+                  <CountUp end={7} duration={2} suffix="+" enableScrollSpy />
                 </span>
                 <span className="text-sm">Projects Completed</span>
               </div>
@@ -95,7 +95,7 @@ export default function AboutSection() {
               <div>
                 <h3 className="text-cyan-400 font-semibold mb-2 text-lg ">Education</h3>
                 <p className="text-gray-400 leading-relaxed">
-                  FPT Polytechnic College<br />Web Programming — 2023 to Now
+                  FPT Polytechnic College<br />Web Programming — Graduated 2025
                 </p>
               </div>
               <div className="mbs:text-right sm:text-left">

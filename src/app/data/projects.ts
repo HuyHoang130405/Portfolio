@@ -15,7 +15,7 @@ export const projects = [
       "Personal portfolio website built with Next.js and Tailwind CSS.",
     tech: ["Next.js", "Tailwind", "Framer Motion"],
     github: "https://github.com/HuyHoang130405/Portfolio",
-    demo: "#",
+    demo: "https://huyhoangdev.vercel.app/",
   },
   {
     img: "/images/img-todolist.jpg",
@@ -33,7 +33,7 @@ export const projects = [
       "Backend API for an eCommerce platform built with NestJS, MySQL, and Docker.",
     tech: ["NestJS", "MySQL", "Docker"],
     github: "https://github.com/HuyHoang130405/Ecommerce-T8-2025",
-    demo: "#",
+    demo: "https://ecommerce-t8-2025.onrender.com/api",
   },
   {
     img: "/images/img-jewelry.jpg",
@@ -43,5 +43,13 @@ export const projects = [
     tech: ["PHP"],
     github: "https://github.com/HuyHoang130405/Jewelry-Website",
     demo: "#",
+  }, {
+    img: "/images/img-weather.jpg",
+    title: "Weather App",
+    description:
+      "Weather App built with Next.js and Tailwind CSS",
+    tech: ["Next.js", "Tailwind"],
+    github: "https://github.com/HuyHoang130405/weather-app",
+    demo: "https://huyhoang-weather.vercel.app/",
   },
 ];
